@@ -1,0 +1,81 @@
+﻿@model DACN_CarCare.Models.Book
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<link href="~/Content/assets/css/tooplate-wave-cafe.css" rel="stylesheet" />
+
+<div class="tm-video-wrapper">
+    <i id="tm-video-control-button" class="fas fa-pause"></i>
+    <video style="opacity: 0.2" autoplay muted loop id="tm-video">
+        <source src="~/Content/Frontend/video/backg1.mp4" type="video/mp4">
+    </video>
+</div>
+<div style="text-align:center; margin-top: 240px" class=" flex-column justify-content-center w-100 h-100">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <div style="font-size: 20px; color: #FFFFCC " class="container">
+            <dl class="dl-horizontal">
+                <dt style="color: yellow">
+                    Loại xe
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Loai.tenxe)
+                </dd>
+
+                <dt style="color: yellow">
+                    Tên khách hàng
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.tenKH)
+                </dd>
+
+                <dt style="color: yellow">
+                    Số ĐT
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.sdt)
+                </dd>
+
+                <dt style="color: yellow">
+                    Email
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.email)
+                </dd>
+
+                <dt style="color: yellow">
+                    Ghi chú
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ghichu)
+                </dd>
+
+                <dt style="color: yellow">
+                    Ngày đặt lịch
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ngay)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input style="color: gold; font-family: Arial; font-size: 25px; border: solid" type="submit" value="Delete" class="btn btn-default" /> |
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,74 @@
+﻿@model IEnumerable<DACN_CarCare.Models.Book>
+
+@{
+    ViewBag.Title = "classify";
+    Layout = "~/Views/Shared/_LayoutCarCare.cshtml";
+}
+<link href="~/Content/assets/css/tooplate-wave-cafe.css" rel="stylesheet" />
+<div class="tm-video-wrapper">
+    <i id="tm-video-control-button" class="fas fa-pause"></i>
+    <video style="opacity: 0.1 " autoplay muted loop id="tm-video">
+        <source src="~/Content/Frontend/video/backg1.mp4" type="video/mp4">
+    </video>
+</div>
+<h1 style="color: burlywood;margin-top:150px;margin-bottom: 30px; text-align:center">Lịch bảo dưỡng của tôi</h1>
+<div class=" flex-column justify-content-center w-100 h-100 container">
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+
+        <table style="color: antiquewhite" class="table">
+            <tr>
+                <th>
+                    Loại xe
+                </th>
+                <th>
+                    Tên Khách Hàng
+                </th>
+                <th>
+                    Số điện thoại
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Ghi chú
+                </th>
+                <th>
+                    Ngày đặt lịch
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Loai.tenxe)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.tenKH)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.sdt)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ghichu)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ngay)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Sửa", "Edit", new { id = item.id }) |
+                        @Html.ActionLink("Xóa", "Delete", new { id = item.id })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+
+

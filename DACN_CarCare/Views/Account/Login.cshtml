@@ -1,0 +1,41 @@
+﻿@using DACN_CarCare.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = " Login";
+    Layout = null;
+}
+<link href="~/Content/Frontend/css/login_new.css" rel="stylesheet" />
+<script src="~/Content/Frontend/js/login.js"></script>
+<body>
+    <body id="particles-js">
+    </body>
+    <div class="animated bounceInDown">
+        <div class="container">
+            <span class="error animated tada" id="msg"></span>
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { onsubmit = "return checkStuff()", name = "form1", @class = "box", role = "form" }))
+            {
+                <h4>Đăng <span>Nhập</span></h4>
+                <h5>Sign in to your account.</h5>
+
+                @Html.AntiForgeryToken()
+                @Html.TextBoxFor(m => m.Email, new { name = "email", @class = "form-control email", @placeholder = "Email", autocomplete = "off" })
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                @Html.PasswordFor(m => m.Password, new { id = "pwd", name = "password", @class = "form-control password", @placeholder = "Password", autocomplete = "off" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "fa fa-eye-slash pwd-toggle" })
+                <br />
+                <br />
+                <label>
+                    <input name="" RememberMe value="false" type="checkbox">
+                    <span></span>
+                    <small class="rmb">Remember me</small>
+                </label>
+                <input type="submit" value="Đăng nhập" class="btn1">
+            }
+
+            <p class="dnthave">Bạn chưa có tài khoản? <a>@Html.ActionLink("Đăng ký", "Register")</a>  </p>
+            <a style="display: inline-flex">@Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })</a>
+
+        </div>
+    </div>
+
+</body>

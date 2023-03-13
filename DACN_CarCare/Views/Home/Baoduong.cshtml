@@ -1,0 +1,564 @@
+﻿@{
+    ViewBag.Title = "Baoduong";
+    Layout = "~/Views/Shared/_LayoutCarCare.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title> Dịch vụ bảo dưỡng</title>
+    <link rel="icon" type="image/x-icon" href="~/Content/Frontend/assets/moto.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/Content/Frontend/css/styles.css" rel="stylesheet" />
+    <script src="~/Content/Frontend/js/scroll.js"></script>
+    @Styles.Render("~/Content/Frontend/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- BOXICON -->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0-beta.2/css/lightgallery.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+    <link href="~/Content/assets/css/styles.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/style.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/swiper.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/reset.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/taisansapdaugia.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <main>
+        <section id="detail-link" data-color="#10e88a">
+            <div class="container">
+                <div class="row product">
+                    <div class="col-12">
+                        <div class="product-title-start">
+                            <i class="bx bxs-circle mr-2"></i>
+                            <h3>BẢO DƯỠNG XE MÁY</h3>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="product__name mb-3">
+                            <h2>
+                                Bảo dưỡng xe máy định kỳ là là quá trình kiểm tra, chăm sóc và thay thế các chi tiết hư hỏng, trục trặc của xe theo chu kỳ đều đặn được hướng dẫn bởi nhà sản xuất. Qua đó, giúp đảm bảo an toàn, trơn tru khi vận hành cũng như tăng tuổi thọ sử dụng của xe máy.
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="slide-for" id="lightgallery">
+                            <a class="slide-for-item" href="~/Content/assets/img/1.jpg">
+                                <img class="img-fluid "
+                                     src="~/Content/assets/img/1.jpg"
+                                     alt="" />
+                            </a>
+                        </div>
+                        <div class="bg_slide-nav">
+                            <div class="slide-nav">
+                                <div class="slide-nav-item">
+                                    <div class="slide-nav-item-img">
+                                        <img class="img-fluid"
+                                             src="~/Content/assets/img/2.png"
+                                             alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="product-content mt-2">
+                            <div class="product-bid">
+                                <h2>Bảng thông tin chung</h2>
+                            </div>
+                            <div style="height: 717px; overflow: auto;">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">STT</th>
+                                            <th scope="col">Mục</th>
+                                            <th scope="col">Loại xe áp dụng</th>
+                                            <th scope="col">Loại dịch vụ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Đường ống xăng</td>
+                                            <td>Tất cả</td>
+                                            <td>Kiểm tra</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Lưới lọc xăng</td>
+                                            <td>Super Dream</td>
+                                            <td>Vệ sinh</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Hoạt động tay ga</td>
+                                            <td>Tất cả</td>
+                                            <td>Kiểm tra</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Bướm gió</td>
+                                            <td>Trừ xe tay ga</td>
+                                            <td>Kiểm tra</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>Lọc gió</td>
+                                            <td>Trừ wave alpha</td>
+                                            <td>Vệ sinh</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>Bugi</td>
+                                            <td>Tất cả</td>
+                                            <td>Kiểm tra hoặc thay thế</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>Dầu động cơ</td>
+                                            <td>Tất cả</td>
+                                            <td>Thay thế</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>Dung dịch làm mát</td>
+                                            <td>Xe có hệ thống làm mát</td>
+                                            <td>Thay thế</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>Bình điện</td>
+                                            <td>Super Dream</td>
+                                            <td>Thay thế</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td>Hệ thống phanh</td>
+                                            <td>Tất cả</td>
+                                            <td>Kiểm tra</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">11</th>
+                                            <td>Dầu phanh</td>
+                                            <td>Xe có phanh đĩa</td>
+                                            <td>Kiểm tra</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">12</th>
+                                            <td>Hệ thống khóa phanh</td>
+                                            <td>Xe có khóa phanh</td>
+                                            <td>Kiểm tra</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">13</th>
+                                            <td>Giảm xóc</td>
+                                            <td>Tất cả</td>
+                                            <td>Kiểm tra</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">14</th>
+                                            <td>Ốp bi cổ lái</td>
+                                            <td>Tất cả</td>
+                                            <td>Kiểm tra</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">15</th>
+                                            <td>Bánh/lốp xe</td>
+                                            <td>Tất cả</td>
+                                            <td>Kiểm tra</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id ="decription" data-color="#7f3995" class="detail-description" style="padding: 0;">
+            <div class="container">
+                <nav>
+                    <div class="nav nav-pills" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active"
+                           id="nav-home-tab"
+                           data-toggle="tab"
+                           href="#nav-home"
+                           role="tab"
+                           aria-controls="nav-home"
+                           aria-selected="true">Lợi ích của bảo dưỡng xe máy</a>
+
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active"
+                         id="nav-home"
+                         role="tabpanel"
+                         aria-labelledby="nav-home-tab">
+                        Tăng công suất hoạt động tốt nhất: Bảo dưỡng xe máy đúng định kỳ sẽ giúp xe hoạt động ổn định, tránh tình trạng xe “chết máy” hoặc phát sinh trục trặc khi đang đi đường.
+                        Tăng tuổi thọ sử dụng xe: Các hoạt động bảo trì như thay nhớt, bảo dưỡng chế hoà khí, rửa bầu lọc khí, chỉnh chế độ nhiên liệu, vệ sinh bugi, điều chỉnh côn, đổ thêm nước nạp ắc quy giúp làm sạch các cặn bẩn, nấm mốc tích tụ trong động cơ, từ đó góp phần nâng cao hiệu suất vận hành của xe máy.
+                    </div>
+                </div>
+                <div>
+                    <div class="slide-for" id="lightgallery">
+                        <a class="slide-for-item" href="~/Content/assets/img/3.png">
+                            <img style="width:auto;height: auto;"
+                                 class="img-fluid "
+                                 src="~/Content/assets/img/3.png"
+                                 alt="" />
+                        </a>
+                    </div>
+                </div>
+        </section>
+        <section id="going" data-color="#0d78e7">
+            <div class="container mt-2">
+                <div class="going-title">
+                    <i class="bx bxs-right-arrow mr-2"></i>
+                    <h2>Bảo dưỡng định kỳ:</h3>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-2">
+                        <div class="going-item">
+                            <div class="going-item-img">
+                                <img src="~/Content/assets/img/10.png" class="img-fluid" alt="" />
+                                <div class="going__overlay"></div>
+                                <div class="going__play">
+                                    <a href="#">
+                                        <h5>Thời gian bảo dưỡng</h5>
+                                        <p>Sau 2.000 - 3.000 Km</p>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="going-content">
+                                <p>Dầu nhớt</p>
+                                <h3>
+                                    Theo thời gian, dầu nhớt trong xe trở nên kém chất lượng, ma sát giảm sút.
+                                </h3>
+
+                                <div class="going-starting-price mt-1">
+                                    <h4>80.000->250.000đ</h4>
+                                </div>
+                                <a class="btn btn-sign-up going_btn" href="~/Home/Daunhot">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 p-2">
+                        <div class="going-item">
+                            <div class="going-item-img">
+                                <img src="~/Content/assets/img/11.png" class="img-fluid" alt="" />
+                                <div class="going__overlay"></div>
+                                <div class="going__play">
+                                    <a href="#">
+                                        <h5>Thời gian bảo dưỡng</h5>
+                                        <p>Sau 10.000 – 20.000 km</p>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="going-content">
+                                <p>Dầu phanh và má phanh</p>
+                                <h3>
+                                    Má phanh giúp xe giảm tốc độ trong những tình huống cấp bách
+                                </h3>
+
+                                <div class="going-starting-price mt-1">
+                                    <h4>1.250.000đ->2.000.000đ</h4>
+                                </div>
+                                <a class="btn btn-sign-up going_btn" href="~/Home/DauPhanh">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>   <div class="col-4 p-2">
+                        <div class="going-item">
+                            <div class="going-item-img">
+                                <img src="~/Content/assets/img/12.png" class="img-fluid" alt="" />
+                                <div class="going__overlay"></div>
+                                <div class="going__play">
+                                    <a href="#">
+                                        <h5>Thời gian bảo dưỡng</h5>
+                                        <p>Sau 10.000 Km</p>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="going-content">
+                                <p>Bugi</p>
+                                <h3>
+                                    Bugi đảm nhận vai trò đốt cháy nhiên liệu, thúc đẩy công suất hoạt động.
+                                </h3>
+
+                                <div class="going-starting-price mt-1">
+                                    <h4>55.000->200.000đ</h4>
+                                </div>
+                                <a class="btn btn-sign-up going_btn" href="~/Home/Bugi">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>   <div class="col-4 p-2">
+                        <div class="going-item">
+                            <div class="going-item-img">
+                                <img src="~/Content/assets/img/13.png" class="img-fluid" alt="" />
+                                <div class="going__overlay"></div>
+                                <div class="going__play">
+                                    <a href="#">
+                                        <h5>Thời gian bảo dưỡng</h5>
+                                        <p>Sau 20.000 Km</p>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="going-content">
+                                <p>Nước làm mát</p>
+                                <h3>
+                                    Hạn chế quá nhiệt động cơ trong thời tiết nóng bức.
+                                </h3>
+
+                                <div class="going-starting-price mt-1">
+                                    <h4>70.000->120.000đ</h4>
+                                </div>
+                                <a class="btn btn-sign-up going_btn" href="~/Home/NuocLamMat">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>   <div class="col-4 p-2">
+                        <div class="going-item">
+                            <div class="going-item-img">
+                                <img src="~/Content/assets/img/14.png" class="img-fluid" alt="" />
+                                <div class="going__overlay"></div>
+                                <div class="going__play">
+                                    <a href="#">
+                                        <h5>Thời gian bảo dưỡng</h5>
+                                        <p>Sau 8000 Km</p>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="going-content">
+                                <p>Lọc gió</p>
+                                <h3>
+                                    Lọc gió xe máy là bộ phận của xe được thiết kế để làm sạch không khí bụi bẩn khi bị hút vào bên trong xe máy. Giúp đốt cháy nhiên liệu tốt hơn.
+                                </h3>
+
+                                <div class="going-starting-price mt-1">
+                                    <h4>900.000->1.500.000đ</h4>
+                                </div>
+                                <a class="btn btn-sign-up going_btn" href="~/Home/LocGio">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>   <div class="col-4 p-2">
+                        <div class="going-item">
+                            <div class="going-item-img">
+                                <img src="~/Content/assets/img/15.png" class="img-fluid" alt="" />
+                                <div class="going__overlay"></div>
+                                <div class="going__play">
+                                    <a href="#">
+                                        <h5>Thời gian bảo dưỡng</h5>
+                                        <p>Sau 15.000 Km</p>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="going-content">
+                                <p>Dây cu-roa</p>
+                                <h3>
+                                    Dây cu – roa là bộ phận truyền động chính của xe, thường xuyên chịu lực căng lớn.
+                                </h3>
+
+                                <div class="going-starting-price mt-1">
+                                    <h4>350.000->1.000.000đ</h4>
+                                </div>
+                                <a class="btn btn-sign-up going_btn" href="~/Home/DayCuroa">
+                                    Xem chi tiết
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio" data-color="#f88f18">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Những bộ phận cần được bảo dưỡng</h2>
+                <h3 class="section-subheading text-muted">
+                    Protected machine parts.
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="~/Home/sirius">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="~/Content/assets/img/si.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Vành xe - Nan hoa</div>
+                            <div class="portfolio-caption-subheading text-muted">Rim</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 2-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="~/Home/vario">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="~/Content/assets/img/vario.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Cổ phuốc</div>
+                            <div class="portfolio-caption-subheading text-muted">Shock Absorber</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 3-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="~/Content/assets/img/suzuki.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Phanh trước</div>
+                            <div class="portfolio-caption-subheading text-muted">Front Brake</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="~/Content/Frontend/assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Hiện chúng tôi chưa áp dụng cho loại xe này!!!!</h2>
+                                <p class="item-intro text-muted">Front Brake</p>
+                                <p>Decriptions</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Bán tại cửa hàng</strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Car Care 2022</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/Content/assets/js/jquery.js"></script>
+    <script src="~/Content/assets/js/popper.js"></script>
+    <script src="~/Content/assets/js/bootstrap.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+    <!-- begin js danh mục -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0-beta.2/lightgallery.umd.min.js"></script>
+
+    <script type="text/javascript">
+        lightGallery(document.getElementById("lightgallery"), {
+            speed: 300,
+        });
+    </script>
+    <script>
+        $(".slide-for").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: "60px",
+            arrows: false,
+            fade: true,
+            asNavFor: ".slide-nav",
+        });
+        $(".slide-nav").slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            prevArrow: false,
+            nextArrow: false,
+            asNavFor: ".slide-for",
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true,
+            centerPadding: "0px",
+            prevArrow: '<i class="bx bx-chevron-left left"></i>',
+            nextArrow: '<i class="bx bx-chevron-right right"></i>',
+        });
+    </script>
+    <!-- end js danh mục  -->
+    <script src="js/numbertomoney.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="~/Content/Frontend/js/scripts.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>
